@@ -27,7 +27,6 @@ router.get("/:id", async (req, res) => {
 });
 
 // Creates a new category.
-// TODO: Get this to not return an error even though it works.
 router.post("/", async (req, res) => {
   try {
     const categoryData = await Category.create(req.body);
@@ -43,7 +42,6 @@ router.post("/", async (req, res) => {
 });
 
 // Updates an existing category by its id.
-// TODO: Make this work
 router.put("/:id", async (req, res) => {
   try {
     const categoryData = await Category.update(
