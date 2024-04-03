@@ -27,7 +27,6 @@ router.get("/:id", async (req, res) => {
 });
 
 // Creates a new product.
-//TODO: Confirm this creates necessary tag id connections.
 router.post("/", async (req, res) => {
   try {
     const productData = await Product.create(req.body);
