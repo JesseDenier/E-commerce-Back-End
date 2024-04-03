@@ -72,6 +72,18 @@ router.put("/:id", async (req, res) => {
 // Deletes a category by its id.
 router.delete("/:id", async (req, res) => {
   try {
+    // Check if there are any products associated with this category and stop the process if there are.
+    const productsExist = await Product.findOne({
+      where: {
+        category_id: req.params.id,
+      },
+    });
+    if (productsExist) {
+      return res.status(400).json({
+        message: "Cannot delete category because it contains products!",
+      });
+    }
+
     const categoryData = await Category.destroy({
       where: {
         id: req.params.id,
