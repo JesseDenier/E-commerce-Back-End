@@ -39,9 +39,9 @@ It works by creating SQL tables and then using javascript routes and sequelize t
 
   - 'quit' (Exits the MySQL command-line client)
 
-  - 'node run seed' (Populates the new database with placeholder data)
+  - 'npm run seed' (Populates the new database with placeholder data)
 
-  - 'node start' (Starts the application on your local server)
+  - 'npm start' (Starts the application on your local server)
 
 - When you are done using the application remember to open your terminal and hit 'control + c' at the same time to end the server.
 
@@ -49,7 +49,7 @@ It works by creating SQL tables and then using javascript routes and sequelize t
 
 Use this project by following the installation steps listed above and viewing your local server at port 3001 either with a web browser or a software like Insomnia. You can view the database in different ways, add to it, change it, and delete things from it using only requests.
 
-Video Demonstrating Installation and Usage: XXXXX
+Video Demonstrating Installation and Usage: (https://drive.google.com/file/d/1bHTt-DajWvOmgXqYdZm9QBLYGhWY2fji/view?usp=sharing)
 
 Use Case Example: A small business owner may want to keep track of all the products they have and which categories/tags apply to each product. This would allow them to do all of that and more from one place.
 
